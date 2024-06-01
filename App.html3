@@ -1,0 +1,140 @@
+<DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Diabetes Tracker</title>
+
+ <style>
+
+ body{
+
+ background-image: repeating-radial-gradient(aquamarine,aqua,darkcyan);
+
+ background-repeat: no-repeat;
+
+ background-size: 500% 710%;
+
+ }
+
+ #btn{
+
+ height: 30px;
+
+ border-radius: 5px;
+
+ text-align: center;
+
+ text-decoration: none;
+
+ border: none;
+
+ display: block;
+
+ font-size: 25px;
+
+ }
+
+ #btn:hover{
+
+ background-color: deepskyblue;
+
+ }
+
+ hr{
+
+ border: 1px solid black;
+
+ }
+
+ </style>
+
+</head>
+
+<body>
+
+ <h1>Diabetes Tracker</h1> 
+
+ <form id="diabetes-form">
+
+ <label for="glucose-level">Glucose Level (mg/dL):</label>
+
+ <input type="number" id="glucose-level" name="glucose-level" required>
+
+ <br>
+
+ <label for="meal-time">Meal Time:</label>
+
+ <input type="datetime-local" id="meal-time" name="meal-time" required>
+
+ <br>
+
+ <label for="medication">Medication:</label>
+
+ <input type="text" id="medication" name="medication">
+
+ <br>
+ <button type="submit">Add Entry</button>
+
+ </form>
+
+ <div id="entries">
+
+ <!-- Entries will be displayed here -->
+
+ </div>
+
+ <script>
+
+ // JavaScript code to handle form submission and display entries
+
+ // Function to handle form submission
+
+ document.getElementById('diabetes-form').addEventListener('submit', function(event) {
+
+ event.preventDefault(); // Prevent default form submission
+
+ // Get form values
+
+ var glucoseLevel = document.getElementById('glucose-level').value;
+
+ var mealTime = document.getElementById('meal-time').value;
+
+ var medication = document.getElementById('medication').value;
+
+ // Create entry HTML
+
+ var entryHtml = '<p>Glucose Level: ' + glucoseLevel + ' mg/dL, Meal Time: ' + mealTime + ', Medication: ' + 
+
+medication + '</p>';
+
+ // Append entry to entries div
+
+ document.getElementById('entries').innerHTML += entryHtml;
+
+ // Clear form fields
+
+ document.getElementById('glucose-level').value = '';
+
+ document.getElementById('meal-time').value = '';
+
+ document.getElementById('medication').value = '';
+
+ });
+
+ </script>
+
+ <form action="tut5.html">
+
+ <center><input type="submit" value="Next" id="btn"></center>
+
+</form><br>
+
+</body>
+
+</html>
