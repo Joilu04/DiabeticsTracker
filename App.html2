@@ -75,3 +75,99 @@
  </body>
 
 </html>
+function checkLevels() {
+
+ // Get the input values
+
+ var glucoseLevel = parseFloat(document.getElementById("glucoseLevel").value);
+
+ var bmi = parseFloat(document.getElementById("bmi").value);
+
+ var insulinLevel = parseFloat(document.getElementById("insulinLevel").value);
+
+ var bloodPressure = document.getElementById("bloodPressure").value.trim();
+
+ // Check if the glucose level indicates diabetes
+
+ var glucoseMessage = glucoseLevel >= 126 ? "Your glucose level indicates diabetes. Please consult a doctor." 
+
+:"Your glucose level is normal.";
+
+ // Check if the BMI is within the normal range (18.5 - 24.9)
+
+ var bmiMessage = (bmi >= 18.5 && bmi <= 24.9) ? "Your BMI is within the normal range." : "Your BMI 
+
+indicates underweight or overweight. Please consult a doctor for advice.";
+
+ // Check insulin level
+
+ var insulinMessage = "";
+
+ if (insulinLevel < 3) {
+
+ insulinMessage = "Your insulin level is low. Please consult a doctor.";
+
+ } else if (insulinLevel > 20) {
+
+ insulinMessage = "Your insulin level is high. Please consult a doctor.";
+
+ } else {
+
+ insulinMessage = "Your insulin level is within the normal range.";
+
+ }
+
+ // Check blood pressure
+
+ var bloodPressureMessage = "";
+
+ var bloodPressureValues = bloodPressure.split("/");
+
+ var systolic = parseInt(bloodPressureValues[0]);
+
+ var diastolic = parseInt(bloodPressureValues[1]);
+
+ if (systolic < 90 || diastolic < 60) {
+
+ bloodPressureMessage = "Your blood pressure is low. Please consult a doctor.";
+
+ } else if ((systolic >= 90 && systolic <= 120) && (diastolic >= 60 && diastolic <= 80)) {
+
+ bloodPressureMessage = "Your blood pressure is normal.";
+
+ } else if ((systolic > 120 && systolic <= 129) && (diastolic <= 80)) {
+
+ bloodPressureMessage = "Your blood pressure is elevated. Please monitor it regularly.";
+
+ } else if ((systolic >= 130 && systolic <= 139) || (diastolic >= 80 && diastolic <= 89)) {
+
+ bloodPressureMessage = "You have stage 1 hypertension. Please consult a doctor.";
+
+ } else if (systolic >= 140 || diastolic >= 90) {
+
+ bloodPressureMessage = "You have stage 2 hypertension. Please consult a doctor immediately.";
+
+ }
+
+ 
+
+ 
+
+// Display the output
+
+ document.getElementById("output").innerHTML = glucoseMessage + "<br>" + bmiMessage + "<br>" + 
+
+insulinMessage + "<br>" + bloodPressureMessage;
+
+ }
+
+ </script>
+<form action="tut6.html">
+
+<center><input type="submit" value="Track" id="btn"></center>
+
+</form><br>
+
+</body>
+
+</html>
