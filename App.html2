@@ -1,0 +1,77 @@
+<th>Type</th>
+
+ <th>Subtype</th>
+
+ <th>Description</th>
+
+ </tr>
+
+ <tr>
+
+ <td rowspan="2">Type 1</td>
+
+ <td>Autoimmune</td>
+
+ <td>Condition where the body attacks insulin-producing cells.</td>
+
+ </tr>
+
+ <tr>
+
+ <td>Idiopathic</td>
+
+ <td>Unknown cause, usually diagnosed in adults.</td>
+
+ </tr>
+
+ <tr>
+
+ <td rowspan="2">Type 2</td>
+
+ <td>Insulin Resistant</td>
+
+ <td>Develops when the body becomes resistant to insulin.</td>
+
+ </tr>
+
+ <tr>
+
+ <td>Insulin Deficient</td>
+
+ <td>Develops when the body doesn't produce enough insulin.</td>
+
+ </tr>
+
+ <tr>
+
+ <td>Gestational</td>
+
+ <td>-</td>
+
+ <td>Develops during pregnancy and usually goes away after giving birth.</td>
+
+ </tr>
+
+ <tr>
+
+ <td>Other Types</td>
+
+ <td>-</td>
+
+ <td>Include genetic, monogenic, and secondary diabetes caused by other medical conditions or medications
+
+ </td>
+
+ </tr>
+
+ </table>
+
+<form action="t0.html">
+
+ <center><input type="submit" value="Verify" id="btn"></center>
+
+</form><br>
+
+ </body>
+
+</html>
