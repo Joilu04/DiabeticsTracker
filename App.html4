@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <title>Diabetes Prediction Suggestions</title>
+
+ <style>
+
+ body {
+
+ font-family: Arial, sans-serif;
+
+ padding: 20px;
+
+ background-color: #f7f7f7;
+
+ }
+suggestions {
+
+ background-color: #ffffff;
+
+ padding: 20px;
+
+ border: 1px solid #ccc;
+
+ border-radius: 10px;
+
+ box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+ 
+
+ h2 {
+
+ color: #333;
+
+ }
+
+ ul {
+
+ list-style-type: disc;
+
+ padding-left: 20px;
+
+ }
+
+ </style>
+
+ <style>
+
+ body{
+
+ background-image: repeating-radial-gradient(aquamarine,aqua,darkcyan);
+
+ background-repeat: no-repeat;
+
+ background-size: 500% 710%;
+
+ }
+
+ #btn{
+
+ height: 30px;
+
+ border-radius: 5px;
+
+ text-align: center;
+
+ text-decoration: none;
+
+ border: none;
+
+ display: block;
+
+ font-size: 25px;
+
+ }
+
+ #btn:hover{
+
+ background-color: deepskyblue;
+
+ }
+
+ hr{
+
+ border: 1px solid black;
+
+ }
+
+ </style> 
+
+ </head>
+
+ <body>
+
+ <div class="suggestions ">
+
+ <h2>Suggestions for Diabetes Prediction</h2>
+
+ <ul>
+
+ <li><strong>Healthy Lifestyle Changes:</strong> Incorporate regular physical activity, a balanced diet, and
+
+ stress management techniques into your daily routine.</li>
+
+ 
+
+ <li><strong>Regular Monitoring:</strong> Keep track of blood glucose levels, blood pressure, cholesterol,
+
+ and body weight. This helps identify early signs of diabetes.</li>
+<li><strong>Early Medical Consultation:</strong> Seek medical advice if you notice symptoms like
+
+ excessive thirst, frequent urination, or fatigue.</li>
+
+ 
+
+ <li><strong>Education and Awareness:</strong> Learn about diabetes risk factors and prevention methods. 
+
+ Stay informed through credible resources.</li>
+
+ </ul>
+
+ </div>
+
+ </body>
+
+ </html>
+<li><strong>Early Medical Consultation:</strong> Seek medical advice if you notice symptoms like
+
+ excessive thirst, frequent urination, or fatigue.</li>
+
+ 
+
+ 
